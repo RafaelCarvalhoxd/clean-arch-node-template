@@ -9,6 +9,7 @@ A modern Node.js application template built with TypeScript following Clean Arch
 - **Express** for the web server framework
 - **Prisma ORM** for database operations
 - **JWT Authentication** ready to use
+- **Bcrypt** for password hashing
 - **Environment Configuration** using dotenv
 - **ESLint & Prettier** for code quality and formatting
 
