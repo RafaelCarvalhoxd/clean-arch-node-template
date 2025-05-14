@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "paths": {
+      "@domain/*": ["src/domain/*"],
+      "@infra/*": ["src/infra/*"],
+      "@presentation/*": ["src/presentation/*"],
+      "@application/*": ["src/application/*"]
+    }
+  }
+}
