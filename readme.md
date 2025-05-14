@@ -34,7 +34,7 @@ src/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/clean-arch-node-template.git
+git clone https://github.com/RafaelCarvalhoxd/clean-arch-node-template.git
 cd clean-arch-node-template
 ```
 
