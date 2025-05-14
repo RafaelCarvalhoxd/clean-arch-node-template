@@ -1,0 +1,41 @@
+{
+  "name": "clean-arch-node-template",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/infra/server/server.ts",
+    "dev": "ts-node-dev --require tsconfig-paths/register --respawn --transpile-only src/infra/server/server.ts",
+    "prisma:generate": "prisma generate --schema=src/infra/config/db/prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema=src/infra/config/db/prisma/schema.prisma --name",
+    "prisma:deploy": "prisma migrate deploy --schema=src/infra/config/db/prisma/schema.prisma",
+    "prisma:introspect": "prisma db pull --schema=src/infra/config/db/prisma/schema.prisma",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@eslint/json": "^0.12.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.17",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.7.0"
+  }
+}
